@@ -1,0 +1,176 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #fafafa;
+    height: 100px;
+    align-items: center;
+    background-color: #fafafa;
+    opacity: 0.9;
+}
+
+.menu {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+
+.menu:hover{
+    border-bottom:  solid #000000;
+    color: #000000;
+    padding-bottom: 5px;
+}
+
+.mobileMenuContainer {
+    display: none;
+}
+
+.body {
+    display: flex;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.Content {
+    width: 40%;
+}
+
+.inner {
+    width: 60%;
+}
+
+.Logo {
+    width: 50px;
+    height: 50px;
+}
+
+.MessengerLogo {
+    width: 100%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+
+.input {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #f6f6f6;
+    width: 250px;
+    padding: 0 10px 2px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #0084ff;
+    border: 1px solid #0084ff;
+    padding: 2px 20px 0;
+    height: 40px;
+    border-radius: 24px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+
+.Playstore {
+    width: 150px;
+    height: 150px;
+}
+
+.PlaystoreLogo {
+    width: 100%;
+}
+
+
+.MobileScreenContainer {
+    width: 60%;
+}
+
+.MobileScreen {
+    width: 100%;
+}
+
+.mobileMenuContainer {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+    background-color: #fafafa;
+}
+
+@media (max-width: 767px) {
+    .mobileMenuContainer {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .Content {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .inner {
+        width: 50%;
+        margin: 0 auto;
+
+    }
+    .MobileScreenContainer {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .MobileScreen {
+        width: 120%;
+        margin: 0 -50%;
+    }
+}
+
+@media (max-width: 365px) {
+    .Content {
+        width: 50%;
+    }
+}
